@@ -5,13 +5,24 @@
     body {font-family: "Arial";}
     h1 { font-size: 1.5em; color:red;}
     h2 { font-size: 1.5em; color:#777; font-style: underline;}
+    h3 { font-size: 1em; background-color: #ccc; padding:0.5em; margin:0; margin-bottom:1em;}
+    div.session {border: 1px solid #999;}
+    div.session p {padding: 0.5em; margin:0.5em;}
+    .bold { font-weight: bold;/* yep this is lazy. doing p.bold as a sub for h4*/} 
+    td { border: 1px solid #777;}
   </style>
 </head>
 
 <body>
 <h1>How to Start A Startup If You're Not A Developer</h1>
+<div>
+  <a href="#workshop-materials">Workshop Materials</a> | 
+  <a href="#office-hours">Office Hours</a> | 
+  <a href="#about-me">About Me</a> |
+  <a href="mailto:ezl@rocketlease.com">ezl@rocketlease.com</a>
+</div>
 <p>
-  Hi, my name is ezl. I am teaching a seminar called "<a href="http://www.eventbrite.com/event/3192487817">How to start a startup if you're not a developer</a>".
+  Hi, I'm Ezl. I am teaching a seminar called "<a href="http://www.eventbrite.com/event/3192487817">How to start a startup if you're not a developer</a>".
 </p>
 <p>
 You can think of loosely it as:
@@ -21,17 +32,58 @@ You can think of loosely it as:
   <li>Other stuff non-developers can do to add value to their product</li>
 </ol>
 
-<h2>Workshop materials</h2>
-<p>Here are the slides that I will be using/have used for my talks:</p>
+<h2 id="workshop-materials">Workshop materials</h2>
+<div class="session">
+  <h3>Class 1: Intro + How to Find / Hire Contract Developers</h3>
+  <p class="bold">Summary:</p>
+  <p>Hiring developers is hard. Developers aren't jerks, they're human, and they're solving hard problems.
+     Here are some things to think about when interviewing/selecting candidates. We closed with talking briefly about specs.
+  </p>
+  <p class="bold">Slides:</p>
+  <ul>
+    <li><a href="0-meta.html">Introduction</a></li>
+    <li><a href="1-hiring.html">Hiring Contractor Developers</a></li>
+  </ul>
+
+  <p>In the workshop I describe a job posting that I've used in the past.</p>
+  <p>Here it is: <a href="developerfilter.html">Sample developer filter</a></p>
+  <h3>Homework</h3>
+  <ol>
+    <li>Write a "Make a peanut butter jelly sandwich" spec [time: 20 min]</li>
+    <li>Write a "How to tie your shoelaces" spec [time: 20 min]</li>
+    <li>Craft your own version of a hiring job posting for a message board [time: 1 hour]</li>
+    <li>Post your job posting on oDesk or Elance (If you're feeling adventurous) [time: 1 hour]</li>
+  </ol>
+  <p>The specs sound deceptively easy. Rest assured I will do my best to follow your specs and create absurd results. I'm excellent at misinterpreting seemingly clear instructions, and your developer will be too.
+  </p>
+  <p>Your objective is to create an absolutely unambiguous, impossible-to-misinterpret, step by step instruction of how to do the tasks. We should be able to deliver it to any english speaking person and all products that result will either (a) be a peanut butter jelly sandwich in our vision, or (b) have clear evidence that they did not follow a specifically outlined instruction.
+  </p>
+  <p>Note that this also implies that we could give the task to 10 people and get back 10 indistinguishable final products.</p>
+  <p></p>
+  <p></p>
+</div>
+
+<h2 id="office-hours">Office Hours</h2>
+I am holding office hours. It is my hope that you'll work along and treat this workshop as a lab and an opportunity to experiment with hiring a freelancer. You are free to schedule office hours with me.
+For now I am reserving these hours for office hours:
 <ul>
-  <li><a href="0-meta.html">Introduction</a></li>
-  <li><a href="1-hiring.html">Hiring Contractor Developers</a></li>
+  <li>Mon 5-8pm</li>
+  <li>Tues noon-3pm</li>
+  <li>Or by emailing me</li>
 </ul>
 
-<p>In the workshop I describe a job posting that I've used in the past.</p>
-<p>Here it is: <a href="developerfilter.html">Sample developer filter</a></p>
+You may use office hours for anything at all, including:
+<ul>
+  <li>talking about your struggles/successes/concerns with seminar content</li>
+  <li>homework assingments</li>
+  <li>using me as a resource/advisor for your project</li>
+  <li>why you're afraid of monster's under the bed</li>
+  <li>what your favorite brand of tennis shoes is</li>
+</ul>
+I more knowledgeable on some of these topics than others, but I am happy to talk about anything at all.
 
-<h2>About me</h2>
+
+<h2 id="about-me">About me</h2>
 <p>
   I am currently working on Rocket Lease, which provides <a href="http://rocketlease.com">online apartment applications</a>. Rocket Lease makes it easy for landlords to use online applications and automates credit checks.
 </p>
@@ -44,10 +96,24 @@ You can think of loosely it as:
 </p>
 
 <table>
-  <tr><td>email</td><td><a href="mailto:ezl@rocketlease.com">ezl@rocketlease.com</a></td></tr>
-  <tr><td>email</td><td><a href="mailto:ericzliu@gmail.com">ericzliu@gmail.com</a></td></tr>
-  <tr><td>blog</td><td><a href="http://ezliu.com">www.ezliu.com</a></td></tr>
-  <tr><td>twitter</td><td><a href="http://twitter.com/ezliu">@ezliu</a></td></tr>
+  <tr>
+    <td>My startup</td>
+    <td>Rocket Lease, which provides an online <a href="http://www.rocketlease.com">rental application form</a> for landlords</td>
+  </tr>
+  <tr>
+    <td>email</td>
+    <td><a href="mailto:ezl@rocketlease.com">ezl@rocketlease.com</a></td>
+  </tr>
+  <tr>
+    <td>email</td>
+    <td><a href="mailto:ericzliu@gmail.com">ericzliu@gmail.com</a></td>
+  </tr>
+  <tr><td>calendar</td><td><a href="http://ezliu.com/calendar">www.ezliu.com/calendar</a></td>
+  </tr>
+  <tr><td>blog</td><td><a href="http://ezliu.com">www.ezliu.com</a></td>
+  </tr>
+  <tr><td>twitter</td><td><a href="http://twitter.com/ezliu">@ezliu</a></td>
+  </tr>
 </table>
 <p>You should follow me on <a href="http://twitter.com/ezliu">twitter (@ezliu)</a>. I don't say much of value, but it will make me happier to have a larger number of followers.</p>
 
