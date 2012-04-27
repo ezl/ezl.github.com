@@ -1,0 +1,100 @@
+<style>
+   .code {background:#ccc; margin:1em 3em; padding:1em;}
+</style>
+<!--Seriously. i just threw this together by pasting from an email i sent a year go and lightly modifying.
+the markup is crap. don't judge! also, tons of typos, but i don't care for now.
+-->
+<h1>Sample developer contractor job post</h1>
+<p>
+Here is a job posting I've used in the past while trying to find a full time developer to help me with my ongoing development needs. It is short, asks a few questions, and outlines a test that can be completed in less than 2 hours by [someone i want to hire] and reveals a lot of things to me about the candidate.
+</p>
+<p>This was used for a specific purpose and tests specific things. It probably will not be a perfect fit for what you are looking for.</p>
+<p style="color:red;">
+Please don't use this exact one. Create your own set of questions and test.
+</p>
+<div class="code">
+<pre>
+<code>
+I've asked all the candidates so far to answer the following questions, provide me with previous project source code, and complete the simple django app i've described below.
+1. Are you available for full time work. If so, starting when, and what is your desired monthly salary? 
+2. Do you feel comfortable helping define the specs? 
+4. What is your opinion of CSS grid systems? Do you have a favorite?
+5. Have you used javascript frameworks like jquery, mootools, backbone, meteor -- what is your opinion on them?
+6. Describe your level of familiarity with: Python, Django, Jquery, CSS, distributed computing, data-mining 
+7. Do you also do graphic design? 
+8. Describe 3 recent data intensive Django projects that you have completed. Please include source code if possible. 
+
+Additional Requirements: 
+1. I have a strict requirement of a 12 hour turnaround on ALL emails from me. 2 failures to comply will result in the end of our agreement. 
+2. Version control is done in Git. Git version control messages and commits are as important to me as the code. Follow this guide: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
+3. Code clarity and efficiency is critical (PEP8)
+4. Estimates for all milestones before begun.
+5. All hours must be logged with descriptions of the work completed.
+
+Test project:
+This is a simple 2 page project.
+
+page 1. page that displays the most recent price for a stock.  there should be a single input field where a user can type in a stock symbol (for example on finance.google.com or finance.yahoo.com).  Entering the field will retrieve and display the most recent stock price without refreshing the page.
+
+page 2. a page that just says "hello world" 
+
+Additionally, on each of these pages, at the top, there should be an area that detects whether the user is logged in.
+
+- if the user is logged in, it displays the text "you are logged in as [username]. click here to log out".
+- if the user is NOT logged in, it displays a login form that allows the user to log in.  Login;s should use Twitter credentials.
+
+On each page, also display a menu bar allows the user to navigate between these 2 pages.
+
+You may use any external libraries of your choosing for these tasks.
+
+Once completed, deploy it and send me the link to the deployed web application and the full source code and tell me how long the project took.
+
+You may deploy this on any server you choose. appearance does not matter, as long as the product functions as requested.
+
+</code>
+</pre>
+</div>
+
+<p>
+The form letter is mostly designed as an English language comprehension tool.  I don't really care what their OPINION is about CSS grid systems, but it lets me know how they communicate and how they think.
+</p>
+<p>Likewise its not important to me if they've played with meteor or derby, but people who code for fun make the best people to for coding for a job.
+</p><p>You'll notice the #3 point is missing. I think I had a #3 at some point and I deleted it, but forgot to change the numbers.  Then when I blasted it out on odesk, some few developers pointed it out and some didn't.  I liked people who pointed it out. Not commenting on it isn't a negative indicator, but pointing it out was a good thing. So I left the numbering as is.
+</p>
+<p>
+The additional requirements also sort of hammer at how detail/process oriented they are since working remotely is half about organization and accountability.  Responsiveness is almost more impnortant to me than code quality, which is why I impose the 12 hour requirement (I don't enforce it, but I want them to know what they're getting into.  The estimates are just to help me track their efficiency.
+</p>
+<p>
+The test project isn't hard, but it forces them to do a few things:
+</p>
+<ol>
+<li>deploy to a live site</li>
+<li>Either use external resources and show they can authenticate using a 3rd party API (twitter) and access an undocumented API (get stock prices).  it forces them to be a self starter and decide what APIs to use.</li>
+<li>Show me their code so I can see if its well commented, PEP8, etc.</li>
+<li>Demonstate Django proficiency.  Last time I had people who didn't use template inheritance, used weird project structures, didn't use standard django auth, etc.  But some of them are very concise and clearly use Django well.Bad usage isn't necessarily a deal breaker -- ask them why they chose that design decision.</li>
+<li>Show me how fast they work</li>
+<li>They'll probably use JQuery for the AJAX call I request in "retrieve most recent stock price without refreshing page".  Additionally, this is sort of buried in there, so again, it's an attention to detail thing.</li>
+</ol>
+<p>
+<p>
+There's plenty left for interpretation -- there are no comments on layout or aesthetics, so end up seeing who is detail oriented, an over-achiever, and people who just deliver an aesthetic you like without asking.
+</p>
+<p>
+My friend alex said it well : "Give him just enough rope to hang himself" -- 
+</p>
+<p>
+The ideal developer can read my mind and deliver what i WANT, not what I ask for. To be clear, you SHOULD NOT BE EXPECTING THIS. It is YOUR job to provide insanely detailed, unambiguous specs. However, in the real world, sometimes you fail.  So if you have a lot of candidates, pick the one that seems to read your mind.
+</p>
+<p>
+This min project request is vague enough that I can get some variety of submissions but specific enough that I can compare developers, their work styles and ability to follow loose instructions.  i also ask them to tell me how long it took them.  Sergey did the project in under an hour (the top 3 candidates I did last time all delivered it in 45-90 minutes of work).
+</p>
+<p>
+People who pass this are probably decent enough.  Anyone who gets through this filter gets asked a few questions about processing large data sets, machine learning, and random hypothetical shit I'm interested in.  If tthey have a github repo, i request it.  I look for decent code and regular commits -- good code (duh), regular commits (writing a lot of code makes you better, and if you code for fun, yay!)
+Bonus points for being a contributor on an actively maintained open source project.</p>
+<p>
+  I ask each of them if they are interested in running their own startup.  The best answer for this is "yes, I have one and I've tried it, but its hard to do from [Moldova] as the real audiences are in America" or "Yes, I have great idea X, but right now I just bought a house and I need 3 months to get steady income to pay my mortgage". That means that they have the desire, skillset, and motivation of a cofounder, but are geographically restricted (as opposed to brainless, shitty coders, or unmotivated) or otherwise constrained.  In my experience, anyone asking for under 10/hour is a bad communicator from China.  Indians tend to be spottier than Pakistani developers (and have worse English).  Eastern Europeans are good and tend to have strong logic and mathematical aptitude. 
+
+</p>
+<p>
+Right now my top candidate seems to be a Vietnamese developer (who has explicitly mentioned preferring to use Fabric for deploying Django sites)
+</p>
