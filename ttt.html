@@ -1,6 +1,5 @@
 <html>
 <head>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
    <style>
      td {
        width: 30px;
@@ -8,16 +7,37 @@
        border: 1px solid black;
      }
    </style>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
    <script>
      $(document).ready(function() {
-      var next = "x";
-      var getBoardState = function() {
-        var out = [];
-        $("td").each(function(index, value) {
-          out.push( $(this).html() );
-        });
-        return out;
-      }
+       var WINPATTERNS = [
+         [0,1,2],
+         [3,4,5],
+         [6,7,8],
+         [0,3,6],
+         [1,4,7],
+         [2,5,8],
+         [0,4,8],
+         [2,4,6],
+       ];
+       var next = "x";
+       var boardState = [,,,,,,,,];
+       var updateBoardState = function() {
+         boardState = [];
+         $("td").each(function(index, value) {
+           boardState.push( $(this).html() );
+         });
+       }
+       var checkWinner = function(pattern) {
+         a = pattern[0];
+         b = pattern[1];
+         c = pattern[2];
+         if (boardState[a] === boardState[b] &&
+             boardState[a] === boardState[c] &&
+             boardState[a] !== "") {
+           alert(boardState[a].toString() + " wins");
+         }
+       };
        $('td').mousedown(function(e) {
          if (e.which === 3) {
            // right click, delete the item
@@ -26,38 +46,29 @@
            $(this).html(next);
            next = (next==="o") ? "x": "o";
          }
-         e.preventDefault();
-         $("div.boardstate").prepend("<p>" + getBoardState().toString() + "</p>");
+         updateBoardState();
+         $.each(WINPATTERNS, function() {
+           // checkWinner($(this));
+         });
 
+         $("div.boardstate").prepend("<p>" + boardState.toString() + "</p>");
        });
      });
    </script>
 </head>
-<body>
+
+<body oncontextmenu="return false;">
   <ul>
     <li>Click on a box to make a move.</li>
     <li>Click it again to toggle X/O.</li>
     <li>Right click to delete.</li>
   </ul>
   <table>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
+    <tr>    <td></td> <td></td> <td></td>    </tr>
+    <tr>    <td></td> <td></td> <td></td>    </tr>
+    <tr>    <td></td> <td></td> <td></td>    </tr>
   </table>
-  <p>Board State</p>
-  <div class="boardstate">
-  </div>
+  <p style="display: none;">Board State</p>
+  <div class="boardstate" style="display: none;"></div>
 </body>
 </html>
