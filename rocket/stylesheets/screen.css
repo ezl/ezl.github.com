@@ -1,0 +1,344 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* line 20, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1; }
+
+/* line 22, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 24, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 26, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 28, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 101, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 30, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 114, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/*********************************************/
+/* Main Page stylesheet code start from here */
+/*********************************************/
+/* Website Top Red Line */
+/* line 31, ../sass/screen.scss */
+.hLine {
+  background: #7B1317;
+  height: 5px; }
+
+/* Header Code Start From Here */
+/* line 37, ../sass/screen.scss */
+#header {
+  height: 820px;
+  background: url(../images/headerbg.jpg) left top repeat; }
+  /* line 40, ../sass/screen.scss */
+  #header #headContainer {
+    /* Head Container */
+    max-width: 950px;
+    min-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.2% 5% 0 5%; }
+    /* line 47, ../sass/screen.scss */
+    #header #headContainer .logo {
+      /* Logo Styles */
+      max-width: 456px;
+      width: 60%;
+      display: block;
+      float: left; }
+      /* line 53, ../sass/screen.scss */
+      #header #headContainer .logo img {
+        max-width: 456px;
+        width: 100%; }
+    /* line 58, ../sass/screen.scss */
+    #header #headContainer #loginForm {
+      /* Login Form Style */
+      width: 40%;
+      height: 117px;
+      display: block;
+      float: right; }
+    /* line 65, ../sass/screen.scss */
+    #header #headContainer #regForm {
+      /* Register Form All Style's are Nested */
+      width: 53%;
+      max-width: 495px;
+      background: #fafafa;
+      margin: 4% 0 0 0;
+      float: left;
+      position: relative; }
+      /* line 74, ../sass/screen.scss */
+      #header #headContainer #regForm #signupForm {
+        padding: 20px; }
+        /* line 76, ../sass/screen.scss */
+        #header #headContainer #regForm #signupForm .freeBadge {
+          position: absolute;
+          left: -4px;
+          top: -4px;
+          width: 101px;
+          height: 101px;
+          background: url(../images/freeBadge.png) left top no-repeat; }
+        /* line 84, ../sass/screen.scss */
+        #header #headContainer #regForm #signupForm h1 {
+          font-family: "Georgia";
+          font-size: 35px;
+          text-align: center;
+          color: #333333;
+          font-style: italic;
+          line-height: 40px;
+          margin: 30px 0px 0px 0px; }
+        /* line 93, ../sass/screen.scss */
+        #header #headContainer #regForm #signupForm form {
+          padding: 20px 10px; }
+          /* line 95, ../sass/screen.scss */
+          #header #headContainer #regForm #signupForm form input[type=text] {
+            padding: 8px;
+            color: #666666;
+            width: 95.7%;
+            font-size: 14px;
+            margin: 5px 0px 5px 0px; }
+          /* line 102, ../sass/screen.scss */
+          #header #headContainer #regForm #signupForm form .smallTextbox {
+            padding: 8px;
+            color: #666666;
+            font-size: 14px;
+            max-width: 221px;
+            width: 44.9%;
+            margin: 5px 0px 5px 0px; }
+      /* line 112, ../sass/screen.scss */
+      #header #headContainer #regForm .listItems {
+        padding: 20px 30px 10px 30px;
+        background: #efefef;
+        border-top: solid 1px #ccc;
+        border-bottom: solid 1px #ccc; }
+        /* line 117, ../sass/screen.scss */
+        #header #headContainer #regForm .listItems ul {
+          margin: 20px 0 0 0; }
+          /* line 119, ../sass/screen.scss */
+          #header #headContainer #regForm .listItems ul li {
+            display: block;
+            width: 100%;
+            height: 40px;
+            text-align: left;
+            font-size: 18px;
+            font-family: "Lucida Grande";
+            color: #666666;
+            text-indent: 30px;
+            background: url(../images/checkArrow.png) left top no-repeat;
+            text-shadow: 1px 1px #fff; }
+    /* line 135, ../sass/screen.scss */
+    #header #headContainer .mainImage {
+      width: 435px;
+      float: right;
+      text-align: center;
+      margin: 35px 0 0 0; }
+      /* line 140, ../sass/screen.scss */
+      #header #headContainer .mainImage img {
+        max-width: 320px;
+        width: 100%; }
+    /* line 145, ../sass/screen.scss */
+    #header #headContainer #supportArea {
+      padding: 20px 30px; }
+      /* line 147, ../sass/screen.scss */
+      #header #headContainer #supportArea span {
+        display: block;
+        width: 340px; }
+
+/* End of Header */
+/* Main Content Part Styles Start From Here */
+/* line 158, ../sass/screen.scss */
+#content {
+  background: #efefef;
+  /* For Creating New Row In Content Field, This will just create row height and width will be different*/ }
+  /* line 161, ../sass/screen.scss */
+  #content .row {
+    display: block;
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto; }
+  /* line 167, ../sass/screen.scss */
+  #content .section1 {
+    /* Here is example how to create a section in content*/
+    background: url(../images/section1.jpg) repeat-y left top; }
+  /* line 171, ../sass/screen.scss */
+  #content .section_overide_background {
+    background: #E8E8E8; }
+  /* line 175, ../sass/screen.scss */
+  #content #contentContainer {
+    width: 100%; }
+  /* line 178, ../sass/screen.scss */
+  #content .links {
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+    padding: 33px 0px 33px 0px; }
+    /* line 183, ../sass/screen.scss */
+    #content .links li {
+      display: inline-block;
+      width: 180px; }
+
+/*********************************************/
+/* Common Classes Used In Page */
+/*********************************************/
+/* Alignment Commands */
+/* line 196, ../sass/screen.scss */
+.alignRight {
+  float: right; }
+
+/* line 199, ../sass/screen.scss */
+.alignLeft {
+  float: left; }
+
+/* Text Styles */
+/* line 205, ../sass/screen.scss */
+.bold {
+  font-weight: bold; }
+
+/* line 209, ../sass/screen.scss */
+.siteRed, .bigRedTitle {
+  color: #8a1419; }
+
+/* line 213, ../sass/screen.scss */
+.mediumText {
+  font-size: 18px;
+  font-family: "Lucida Grande"; }
+
+/* line 218, ../sass/screen.scss */
+.bigRedTitle {
+  font-size: 40px;
+  text-align: center;
+  padding: 47px 0 47px 0; }
+
+/* line 225, ../sass/screen.scss */
+.supportText {
+  font-family: "Lucida Grande";
+  font-size: 18px;
+  color: #8a1419; }
+
+/* line 231, ../sass/screen.scss */
+.caps {
+  text-transform: uppercase; }
+
+/* line 235, ../sass/screen.scss */
+.siteDarkGray {
+  color: #666666; }
+
+/* line 239, ../sass/screen.scss */
+.addTextShadow {
+  text-shadow: 1px 1px #fff; }
+
+/* line 243, ../sass/screen.scss */
+.addTextShadowBlack {
+  text-shadow: 0px 1px #000; }
+
+/* Buttons Design */
+/* line 249, ../sass/screen.scss */
+.btnRound {
+  width: 91px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background: url(../images/btnSignIn.png) left top no-repeat;
+  font-family: "Arial";
+  color: #fff;
+  text-shadow: 1px 1px #687D7B;
+  cursor: pointer; }
+
+/* line 261, ../sass/screen.scss */
+.btnBig {
+  width: 428px;
+  height: 44px;
+  background: url(../images/buttonBig.png) left top no-repeat;
+  border: none;
+  line-height: 32px;
+  display: block;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  outline: none;
+  font-size: 18px;
+  margin: 10px 0px 0px 0px;
+  cursor: pointer; }
+
+/* line 277, ../sass/screen.scss */
+.btnLink1 {
+  color: #8a1419;
+  font-family: "Myriad Pro";
+  font-size: 18px;
+  background: url(../images/redArrow.png) right center no-repeat;
+  padding-right: 10px;
+  text-decoration: none; }
+
+/* line 286, ../sass/screen.scss */
+.buttonStyle1, .buttonStyle1_Selected {
+  display: block;
+  width: 167px;
+  height: 33px;
+  background: url(../images/buttonStyle1_Hover.png) left top no-repeat;
+  line-height: 33px;
+  text-align: center;
+  color: #333333;
+  text-decoration: none;
+  font-family: "Arial";
+  outline: none; }
+  /* line 297, ../sass/screen.scss */
+  .buttonStyle1:hover, .buttonStyle1_Selected:hover {
+    background: url(../images/buttonStyle1.png) left top no-repeat;
+    color: white; }
+
+/* line 303, ../sass/screen.scss */
+.buttonStyle1_Selected {
+  color: white;
+  background: url(../images/buttonStyle1.png) left top no-repeat; }
+
+/* In-Built Shadow Effects */
+/* line 311, ../sass/screen.scss */
+.box-shadow {
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  background: #e1e1e1; }
+
+/* line 318, ../sass/screen.scss */
+.box-shadow {
+  filter: progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=0), progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=90), progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=180), progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=270); }

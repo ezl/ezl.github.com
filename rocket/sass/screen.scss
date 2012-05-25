@@ -1,0 +1,325 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$siteWidth: 100%;
+$siteMaxWidth: 950px;
+$siteMinWidth: 320px;
+$siteMargin: 0 auto;
+$defaultFonts: "Arial";
+$georgia: "Georgia";
+$lucida: "Lucida Grande";
+$myriad: "Myriad Pro";
+$lightGray: #fafafa;
+$maxLightGray: #efefef;
+$darkGray: #666666;
+$darkText: #333333;
+$whiteText: #fff;
+$siteRed: #8a1419;
+
+
+
+/*********************************************/
+/* Main Page stylesheet code start from here */
+/*********************************************/
+
+/* Website Top Red Line */
+
+.hLine {
+	background: #7B1317;
+	height: 5px;
+}
+
+/* Header Code Start From Here */
+#header { 
+	height: 820px;
+	background: url(../images/headerbg.jpg) left top repeat;	
+	#headContainer {
+		/* Head Container */
+		max-width: $siteMaxWidth;
+		min-width: $siteMinWidth;
+		width: $siteWidth;
+		margin: $siteMargin;
+		padding: 1.2% 5% 0 5%;
+		.logo {
+			/* Logo Styles */
+			max-width: 456px;
+			width: 60%;			
+			display: block;
+			float: left;
+			img {
+				max-width: 456px;
+				width: 100%;				
+			}
+		}
+		#loginForm {
+			/* Login Form Style */
+			width: 40%;
+			height: 117px;
+			display: block;
+			float: right;		
+		}	
+		#regForm {
+			/* Register Form All Style's are Nested */
+			width: 53%;
+			max-width: 495px;			
+			background: $lightGray;
+			margin: 4% 0 0 0;
+			float: left;
+			position: relative;
+
+			#signupForm {
+				padding: 20px;
+				.freeBadge {
+				position: absolute;
+				left: -4px;
+				top: -4px;
+				width: 101px;
+				height: 101px;
+				background: url(../images/freeBadge.png) left top no-repeat;
+				}
+				h1 {
+					font-family: $georgia;
+					font-size: 35px;
+					text-align: center;
+					color: $darkText;
+					font-style: italic;
+					line-height: 40px;
+					margin: 30px 0px 0px 0px;
+				}
+				form {
+					padding: 20px 10px;				
+					input[type=text] {
+						padding: 8px;
+						color: $darkGray;
+						width: 95.7%;
+						font-size: 14px;
+						margin: 5px 0px 5px 0px;
+					}
+					.smallTextbox {
+						padding: 8px;
+						color: $darkGray;					
+						font-size: 14px;	
+						max-width: 221px;					
+						width: 44.9%;						
+						margin: 5px 0px 5px 0px;
+					}	
+				}				
+			}
+			.listItems {
+				padding: 20px 30px 10px 30px;
+				background: #efefef;
+				border-top: solid 1px #ccc;
+				border-bottom: solid 1px #ccc;
+				ul {
+					margin: 20px 0 0 0;
+					li {
+						display: block;
+						width: 100%;
+						height: 40px;						
+						text-align: left;
+						font-size: 18px;
+						font-family: $lucida;
+						color: $darkGray;	
+						text-indent: 30px;
+						background: url(../images/checkArrow.png) left top no-repeat;
+						text-shadow: 1px 1px #fff;					
+					}
+				}
+			}
+			
+		}	
+		.mainImage {
+			width: 435px;
+			float: right;
+			text-align: center;
+			margin: 35px 0 0 0;
+			img {
+				max-width: 320px;
+				width: 100%;
+			}
+		}
+		#supportArea {
+			padding: 20px 30px;
+			span {
+				display: block;
+				width: 340px;
+			}
+		}
+	}
+} /* End of Header */
+
+
+/* Main Content Part Styles Start From Here */
+
+#content {
+	background: $maxLightGray;
+	/* For Creating New Row In Content Field, This will just create row height and width will be different*/
+	.row {
+		display: block;
+		max-width: $siteMaxWidth;
+		width: $siteWidth;
+		margin: $siteMargin;
+	}
+	.section1 {
+		/* Here is example how to create a section in content*/		
+		background: url(../images/section1.jpg) repeat-y left top;
+	}
+	.section_overide_background {
+		background: #E8E8E8;
+	}
+	
+	#contentContainer {
+		width: $siteWidth;
+	}
+	.links {
+		display: block;
+		width: 600px;
+		margin: $siteMargin;
+		padding: 33px 0px 33px 0px;
+		li {
+			display: inline-block;
+			width: 180px;
+		}
+	}
+}
+
+/*********************************************/
+/* Common Classes Used In Page */
+/*********************************************/
+
+/* Alignment Commands */
+
+.alignRight {
+	float: right;
+}
+.alignLeft {
+	float: left;
+}
+
+/* Text Styles */
+
+.bold {
+	font-weight: bold;
+}
+
+.siteRed {
+	color: $siteRed;
+}
+
+.mediumText {
+	font-size: 18px;
+	font-family: $lucida;
+}
+
+.bigRedTitle {
+	@extend .siteRed;
+	font-size: 40px;
+	text-align: center;
+	padding: 47px 0 47px 0;
+}
+
+.supportText {
+	font-family: $lucida;
+	font-size: 18px;
+	color: $siteRed;	
+}
+
+.caps {
+	text-transform: uppercase;
+}
+
+.siteDarkGray {
+	color: $darkGray;
+}
+
+.addTextShadow {
+	text-shadow: 1px 1px #fff;
+}
+
+.addTextShadowBlack {
+	text-shadow: 0px 1px #000;
+}
+
+/* Buttons Design */
+
+.btnRound {
+	width: 91px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	background: url(../images/btnSignIn.png) left top no-repeat;
+	font-family: $defaultFonts;
+	color: #fff;
+	text-shadow: 1px 1px #687D7B;
+	cursor: pointer;
+}
+
+.btnBig {
+	width: 428px;
+	height: 44px;
+	background: url(../images/buttonBig.png) left top no-repeat;
+	border: none;
+	line-height: 32px;
+	display: block;
+	vertical-align: middle;
+	text-align: center;
+	color: $whiteText;
+	outline: none;
+	font-size: 18px;
+	margin: 10px 0px 0px 0px;
+	cursor: pointer;
+}
+
+.btnLink1 {
+	color: $siteRed;
+	font-family: $myriad;
+	font-size: 18px;
+	background: url(../images/redArrow.png) right center no-repeat;
+	padding-right: 10px;
+	text-decoration: none;
+}
+
+.buttonStyle1 {
+	display: block;
+	width: 167px;
+	height: 33px;
+	background: url(../images/buttonStyle1_Hover.png) left top no-repeat;
+	line-height: 33px;
+	text-align: center;
+	color: $darkText;
+	text-decoration: none;
+	font-family: $defaultFonts;
+	outline: none;
+	&:hover {
+		background: url(../images/buttonStyle1.png) left top no-repeat;
+		color: $whiteText;
+	}
+}
+
+.buttonStyle1_Selected {
+	@extend .buttonStyle1;
+	color: $whiteText;
+	background: url(../images/buttonStyle1.png) left top no-repeat;
+}
+
+/* In-Built Shadow Effects */
+
+.box-shadow {
+	-webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+	background: #e1e1e1;
+}
+
+.box-shadow {
+
+   filter: progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=0),
+         progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=90),
+         progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=180),
+         progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=270);
+}
+
